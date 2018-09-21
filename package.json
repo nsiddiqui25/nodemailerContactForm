@@ -1,0 +1,19 @@
+{
+  "name": "nodemailercontactform",
+  "version": "1.0.0",
+  "description": "sample contact form using nodemailer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsiddiqui25/nodemailerContactForm.git"
+  },
+  "author": "Nabeel Siddiqui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nsiddiqui25/nodemailerContactForm/issues"
+  },
+  "homepage": "https://github.com/nsiddiqui25/nodemailerContactForm#readme"
+}
