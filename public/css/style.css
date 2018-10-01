@@ -5,6 +5,15 @@ body {
    font-family: 'Dosis', sans-serif;
 }
 
+.bg-dark {
+   background: transparent !important;
+}
+
+.bg-dark.scrolled {
+   transition: 500ms ease;
+   background:#155976 !important;
+}
+
 #particles-js {
    height: 100%;
    background: black;
@@ -13,7 +22,7 @@ body {
 .content {
    position: absolute;
    z-index: 1;
-   top: 15%;
+   top: 10%;
    left: 50%;
    margin-top: 125px;
    margin-left: -250px;
@@ -23,7 +32,8 @@ body {
 
 .grid-3 {
    display: grid;
-   grid-gap: 20px;
+   grid-gap: 3em;
+   grid-row-gap: 4em;
    grid-template-columns: repeat(3, 1fr);
 }
 
@@ -84,4 +94,41 @@ body {
 
 footer {
    background: #29ABE2;
+}
+
+@media(max-width: 775px) {
+
+   body {
+      height: 75vh;
+   }
+   
+   .content {
+      top: 5%;
+      left: 60%;
+   }
+
+   .logo {
+      height: 250px;
+   }
+   
+   .grid-3 {
+      grid-template-columns: 1fr;
+   }
+
+   .grid-3 > div {
+      border-bottom: 2px solid #155976;
+   }
+}
+
+@media(max-width: 550px) {
+   body{
+      height: 50vh;
+   }
+   .content {
+      top: 2%;
+      left: 80%;
+   }
+   .logo {
+      height: 125px;
+   }
 }
