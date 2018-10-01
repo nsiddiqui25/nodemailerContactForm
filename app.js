@@ -46,7 +46,7 @@ app.post('/send', (req, res) => {
       secure: true, // true for 465, false for other ports
       auth: {
          user: 'nabeel@webpoint360.com', // generated ethereal user
-         pass: 'password' // real password goes here
+         pass: 'mOa#-^7EZ$U}' // real password goes here
       },
       tls:{
          rejectUnauthorized: false
@@ -57,7 +57,7 @@ app.post('/send', (req, res) => {
    let mailOptions = {
       from: '"Nodemailer Contact" <nabeel@webpoint360.com>', // sender address
       to: 'nabeel@webpoint360.com, nabeelster25@gmail.com', // list of receivers
-      subject: 'Node Contact Request', // Subject line
+      subject: 'Wubsy Media', // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body
    };
