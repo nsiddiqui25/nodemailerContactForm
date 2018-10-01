@@ -1,58 +1,51 @@
-*{
-   box-sizing: border-box;
- }
- 
- body{
-   background:#92bde7;
-   color:#485e74;
-   line-height:1.6;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   padding:1em;
- }
- 
- .container{
-   max-width:1170px;
-   margin-left:auto;
-   margin-right:auto;
-   padding:1em;
- }
- 
- ul{
-   list-style: none;
-   padding:0;
- }
- 
- .brand{
+body {
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   font-family: 'Dosis', sans-serif;
+}
+
+#particles-js {
+   height: 100%;
+   background: black;
+}
+
+.content {
+   position: absolute;
+   z-index: 1;
+   top: 15%;
+   left: 50%;
+   margin-top: 125px;
+   margin-left: -250px;
+   width: 300px;
+   height: 350px;
+}
+
+.grid-3 {
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.center {
    text-align: center;
- }
- 
- .brand span{
-   color:#fff;
- }
- 
- .wrapper{
-   box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
- }
- 
- .wrapper > *{
-   padding: 1em;
- }
- 
- .company-info{
-   background:#c9e6ff;
- }
- 
- .company-info h3, .company-info ul{
-   text-align: center;
-   margin:0 0 1rem 0;
- }
- 
- .contact{
-   background:#f9feff;
- }
- 
- /* FORM STYLES */
- .contact form{
+   margin: auto;
+}
+
+.services {
+   margin: auto;
+   padding: 4rem 1rem;
+   background: #29ABE2;
+}
+
+.wrapper {
+   margin: auto;
+   padding: 4em 1em;
+}
+.contact form{
+   
+   margin: auto;
+   max-width: 900px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap:20px;
@@ -73,7 +66,7 @@
  .contact form button, .contact form input, .contact form textarea{
    width:100%;
    padding:1em;
-   border:1px solid #c9e6ff;
+   border:1px solid #29ABE2;
  }
  
  .contact form button{
@@ -83,24 +76,12 @@
  }
  
  .contact form button:hover,.contact form button:focus{
-   background:#92bde7;
+   background:#29ABE2;
    color:#fff;
    outline:0;
    transition: background-color 2s ease-out;
  }
- 
- /* LARGE SCREENS */
- @media(min-width:700px){
-   .wrapper{
-     display: grid;
-     grid-template-columns: 1fr 2fr;
-   }
- 
-   .wrapper > *{
-     padding:2em;
-   }
- 
-   .company-info h3, .company-info ul, .brand{
-     text-align: left;
-   }
- }
+
+footer {
+   background: #29ABE2;
+}
