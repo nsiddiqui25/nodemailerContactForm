@@ -94,8 +94,9 @@ body {
    transition: background-color 2s ease-out;
  }
 
-footer > p {
+footer > p, footer > p > a {
    background: #29ABE2;
+   color: #155976;
    margin-bottom: 0;
 }
 
