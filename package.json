@@ -4,7 +4,7 @@
   "description": "sample contact form using nodemailer",
   "main": "app.js",
   "scripts": {
-     "start": "npm start"
+     "start": "node app.js"
   },
   "repository": {
     "type": "git",
