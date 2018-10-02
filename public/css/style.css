@@ -1,7 +1,16 @@
-body {
+* {
    margin: 0;
    padding: 0;
-   height: 100vh;
+   /* box-sizing: border-box; */
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   /* overflow-x: hidden; */
+}
+
+body {
    font-family: 'Dosis', sans-serif;
 }
 
@@ -15,14 +24,23 @@ body {
 }
 
 #particles-js {
-   height: 100%;
-   background: black;
+   height: 100vh;
+   background: #004a69;
+}
+
+.home-content {
+   position: absolute;
+   text-align: center;
+   top: 25%;
+   width: 100%;
+   line-height: 0.4em;
+
 }
 
 .content {
    position: absolute;
-   /* z-index: 1;
-   display: block;
+   z-index: 9999999;
+   /* display: block;
    margin-left: auto;
    margin-right: auto; */
    top: 50%;
@@ -101,11 +119,6 @@ footer > p, footer > p > a {
 }
 
 @media(max-width: 775px) {
-
-   body {
-      height: 75vh;
-   }
-   
    .content {
       position: absolute;
       top: 50%;
@@ -127,18 +140,17 @@ footer > p, footer > p > a {
    }
 }
 
-@media(max-width: 550px) {
-   body{
-      height: 50vh;
-   }
-   .content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -300px;
-      margin-left: -75px;
-   }
+@media(max-width: 480px) {
+
    .logo {
       height: 125px;
+   }
+}
+
+
+@media(max-width: 400px) {
+
+   .logo {
+      height: 75px;
    }
 }
